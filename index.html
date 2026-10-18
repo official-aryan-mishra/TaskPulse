@@ -25,7 +25,8 @@
     }
   </script>
 </head>
-<body class="h-screen flex flex-col overflow-hidden selection:bg-indigo-500/30">
+<!-- UPDATED: h-[100dvh] for Android mobile browsers -->
+<body class="h-[100dvh] flex flex-col overflow-hidden selection:bg-indigo-500/30">
 
   <!-- Header -->
   <header class="bg-slate-900 border-b border-slate-800 px-4 py-3 md:px-6 flex items-center justify-between z-10 flex-shrink-0">
@@ -53,8 +54,9 @@
   <!-- Main Content Grid -->
   <main class="flex-1 overflow-hidden p-4 md:p-6 grid grid-cols-1 md:grid-cols-12 gap-6 relative">
     
-    <!-- LEFT PANEL: Task List (Hidden on mobile when calendar is active) -->
-    <div id="taskPanel" class="flex flex-col gap-4 md:col-span-4 lg:col-span-3 h-full overflow-hidden w-full">
+    <!-- LEFT PANEL: Task List -->
+    <!-- UPDATED: Added md:flex so it never hides on desktop screens -->
+    <div id="taskPanel" class="flex md:flex flex-col gap-4 md:col-span-4 lg:col-span-3 h-full overflow-hidden w-full">
       
       <!-- Filters -->
       <div class="flex flex-col gap-3 flex-shrink-0">
