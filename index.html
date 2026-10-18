@@ -41,14 +41,14 @@
       <input type="file" id="importFile" class="hidden" accept=".json" onchange="importData(event)">
       
       <!-- Export/Import Buttons -->
-      <div class="flex items-center border-r border-slate-700 pr-2 md:pr-4 mr-1 md:mr-2">
-        <button onclick="exportData()" class="p-2 text-slate-400 hover:text-indigo-400 transition-colors" title="Export Data Backup">
-          <i class="fas fa-download"></i>
-        </button>
-        <button onclick="document.getElementById('importFile').click()" class="p-2 text-slate-400 hover:text-indigo-400 transition-colors" title="Import Data Backup">
-          <i class="fas fa-upload"></i>
-        </button>
-      </div>
+<div class="flex items-center border-r border-slate-700 pr-2 md:pr-4 mr-1 md:mr-2">
+  <button onclick="exportData()" class="p-2 text-slate-400 hover:text-indigo-400 transition-colors" title="Export Data Backup">
+    <i class="fas fa-file-export text-lg"></i>
+  </button>
+  <button onclick="document.getElementById('importFile').click()" class="p-2 text-slate-400 hover:text-indigo-400 transition-colors" title="Import Data Backup">
+    <i class="fas fa-file-import text-lg"></i>
+  </button>
+</div>
 
       <button onclick="openEditTaskModal()" class="bg-indigo-500 hover:bg-indigo-400 text-white px-4 py-2 rounded-lg font-medium transition-all shadow-lg shadow-indigo-500/20 flex items-center gap-2 text-sm">
         <i class="fas fa-plus"></i> <span class="hidden sm:inline">New Task</span>
